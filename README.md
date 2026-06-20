@@ -15,6 +15,7 @@ results can be checked without trusting a screenshot.
 | Oracle, reentrancy, rounding | [stvault-audit](https://github.com/Musyg/stvault-audit) | Lending vault: stale-oracle drain, cross-function reentrancy, fee under-charge | High, Medium, Low | ![tests](https://github.com/Musyg/stvault-audit/actions/workflows/ci.yml/badge.svg) |
 | Access control (Vyper) | [vyper-access-control-audit](https://github.com/Musyg/vyper-access-control-audit) | An unguarded ownership transfer lets any account seize control and drain the vault | High | ![tests](https://github.com/Musyg/vyper-access-control-audit/actions/workflows/ci.yml/badge.svg) |
 | Under-constrained ZK circuit | [circom-underconstrained-audit](https://github.com/Musyg/circom-underconstrained-audit) | An unconstrained signal lets a forged witness pass Groth16 verification | High | ![tests](https://github.com/Musyg/circom-underconstrained-audit/actions/workflows/ci.yml/badge.svg) |
+| Formal verification (overflow) | [formal-verification-overflow-audit](https://github.com/Musyg/formal-verification-overflow-audit) | Averaging overflow refuted by a Halmos counterexample, then proven correct for all inputs | Medium | ![tests](https://github.com/Musyg/formal-verification-overflow-audit/actions/workflows/ci.yml/badge.svg) |
 
 ## How each review is structured
 
