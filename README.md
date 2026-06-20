@@ -1,6 +1,6 @@
 # Security Reviews
 
-Reproducible smart-contract security reviews, one repository per vulnerability class. Each
+Reproducible smart-contract and ZK circuit security reviews, one repository per vulnerability class. Each
 review ships a deliberately vulnerable target, an exploit proof of concept, a `fixed` branch
 that neutralises it, and a written report. Every PoC runs in CI on both branches, so the
 results can be checked without trusting a screenshot.
@@ -14,6 +14,7 @@ results can be checked without trusting a screenshot.
 | Reward accounting drift | [reward-accounting-drift-audit](https://github.com/Musyg/reward-accounting-drift-audit) | A stale accumulator on deposit lets a late depositor steal accrued rewards | High | ![tests](https://github.com/Musyg/reward-accounting-drift-audit/actions/workflows/ci.yml/badge.svg) |
 | Oracle, reentrancy, rounding | [stvault-audit](https://github.com/Musyg/stvault-audit) | Lending vault: stale-oracle drain, cross-function reentrancy, fee under-charge | High, Medium, Low | ![tests](https://github.com/Musyg/stvault-audit/actions/workflows/ci.yml/badge.svg) |
 | Access control (Vyper) | [vyper-access-control-audit](https://github.com/Musyg/vyper-access-control-audit) | An unguarded ownership transfer lets any account seize control and drain the vault | High | ![tests](https://github.com/Musyg/vyper-access-control-audit/actions/workflows/ci.yml/badge.svg) |
+| Under-constrained ZK circuit | [circom-underconstrained-audit](https://github.com/Musyg/circom-underconstrained-audit) | An unconstrained signal lets a forged witness pass Groth16 verification | High | ![tests](https://github.com/Musyg/circom-underconstrained-audit/actions/workflows/ci.yml/badge.svg) |
 
 ## How each review is structured
 
