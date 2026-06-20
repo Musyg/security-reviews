@@ -13,6 +13,7 @@ results can be checked without trusting a screenshot.
 | Signature malleability | [eip712-signature-replay-audit](https://github.com/Musyg/eip712-signature-replay-audit) | An ECDSA-malleable twin replays a signed claim for a double-spend | High | ![tests](https://github.com/Musyg/eip712-signature-replay-audit/actions/workflows/ci.yml/badge.svg) |
 | Reward accounting drift | [reward-accounting-drift-audit](https://github.com/Musyg/reward-accounting-drift-audit) | A stale accumulator on deposit lets a late depositor steal accrued rewards | High | ![tests](https://github.com/Musyg/reward-accounting-drift-audit/actions/workflows/ci.yml/badge.svg) |
 | Oracle, reentrancy, rounding | [stvault-audit](https://github.com/Musyg/stvault-audit) | Lending vault: stale-oracle drain, cross-function reentrancy, fee under-charge | High, Medium, Low | ![tests](https://github.com/Musyg/stvault-audit/actions/workflows/ci.yml/badge.svg) |
+| Access control (Vyper) | [vyper-access-control-audit](https://github.com/Musyg/vyper-access-control-audit) | An unguarded ownership transfer lets any account seize control and drain the vault | High | ![tests](https://github.com/Musyg/vyper-access-control-audit/actions/workflows/ci.yml/badge.svg) |
 
 ## How each review is structured
 
